@@ -1,18 +1,23 @@
 package chap05;
-//况农合14率 巩力7锅
+
+import java.util.Random;
+
+//java氓 196率 抗力 5-8 ????
 public class ArrayExam05 {
 	public static void main(String[] args) {
-		int num1 = Integer.parseInt(args[0]);
-		int num2 = 0;
-		System.out.println("涝仿 = "+num1);
+		int[] numArr = new int[10];
 		
-		for(int i = 1; i<=100; i++) {
-			if((i %num1) ==0) {
-				num2 = num2 + i;
-				System.out.print(i+"+");
-			}
+		for(int i = 0; i<numArr.length; i++) {
+			numArr[i] = i;
+			System.out.print(numArr[i]+" ");
 		}
-		System.out.println("="+num2);
+		System.out.println();
+		System.out.println("-------shuffle--------");
+		
+		for(int i = 0; i<100; i++) {
+			
+		}
+		
 	}
 
 }

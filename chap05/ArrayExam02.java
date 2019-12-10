@@ -1,15 +1,18 @@
 package chap05;
-//워크북 15쪽 문제8번
+//java책 196쪽 예제 5-5
 public class ArrayExam02 {
 	public static void main(String[] args) {
-		int[] arr = {10, 20, 30, 40, 50};
-		int sum = 0;//총합을 저장할 변수
+		int sum = 0;
+		float avg = 0f;
+		int[] score = {100, 88, 100, 100, 90};
 		
-		for(int i = 0; i<arr.length; i++) {
-			sum = sum + arr[i];
+		for(int i = 0; i<score.length; i++) {
+			sum = sum+score[i];
 		}
-		System.out.println("합 = "+sum);
-		System.out.println("평균 = "+(sum/arr.length));
+		avg = (float)sum/score.length;
+		System.out.println("총합 = "+sum);
+		System.out.println("평균 = "+avg);
+
 	}
 
 }

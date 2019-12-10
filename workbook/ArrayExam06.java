@@ -1,4 +1,4 @@
-package chap05;
+package workbook;
 //况农合 22率 巩力3锅
 public class ArrayExam06 {
 	public static void main(String[] args) {

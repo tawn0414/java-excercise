@@ -1,17 +1,21 @@
 package chap05;
-
-//워크북 20쪽 문제 1번
+//java책 196쪽 예제 5-6
 public class ArrayExam03 {
 	public static void main(String[] args) {
-		int[] arr = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-		int sum = 0;
-
-		for (int i = 0; i < arr.length; i++) {
-			if (i % 2 == 1) {
-				sum = sum + arr[i];
+		int[] score = {79, 88, 91, 33, 100, 55, 95};
+		int max = score[0];
+		int min = score[0];
+		
+		for(int i = 0; i<score.length; i++) {
+			if(max < score[i]) {
+				max = score[i];
+			}else if (min > score[i]) {
+				min = score[i];
 			}
+			
 		}
-		System.out.println("sum = " + sum);
+		System.out.println("최대값 = "+max);
+		System.out.println("최소값 = "+min);
 
 	}
 

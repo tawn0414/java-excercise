@@ -1,36 +1,23 @@
 package chap05;
-//况农合 21率 巩力2锅
+
+import java.util.Random;
+
+//java氓 196率 抗力 5-7 ????
 public class ArrayExam04 {
 	public static void main(String[] args) {
-		int[][] arr2 = {
-							{5,5,5,5,5},
-							{10,10,10,10,10},
-							{20,20,20,20,20},
-							{30,30,30,30,30}
-						};
-		int sum = 0;
-		double avg = 0.0;
-		double denom = 0;
+		int[] numArr = new int[10];
 		
-		for(int j = 0; j<arr2.length; j++) {
-			for(int i = 0; i<arr2[j].length; i++) {
-				sum = sum + arr2[j][i];
-			}
-			denom = arr2.length*arr2[j].length;
+		for(int i = 0; i<numArr.length; i++) {
+			numArr[i] = i;
+			System.out.print(numArr[i]+" ");
 		}
-		avg = sum/denom;
-		System.out.println("total = "+sum);
-		System.out.println("avg = "+avg);
+		System.out.println();
+		System.out.println("-------shuffle--------");
 		
-		/* 急积丛 钱捞.
-		int count =1;
-		for(int j = 0; j<arr2.length; j++) {
-			for(int i = 0; i<arr2[j].length; i++) {
-				sum = sum + arr2[j][i];
-				count++;
-			}
+		for(int i = 0; i<100; i++) {
+			
 		}
-		avg = (double)sum/count;
-		*/
+		
 	}
+
 }

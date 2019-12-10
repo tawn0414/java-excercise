@@ -1,4 +1,4 @@
-package chap05;
+package workbook;
 
 import java.util.Random;
 
