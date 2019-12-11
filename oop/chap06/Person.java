@@ -20,6 +20,16 @@ public class Person {
 	private String addr;
 	private int age;
 	
+	public Person() {
+		
+	}
+	
+	public Person(String name, String addr, int age) {
+		this.name = name;
+		this.addr = addr;
+		this.age = age;
+	}
+	
 	//모든 멤버변수는 private으로 선언되어 있기 때문에 값을 설정하는 메소드와
 	//값을 가져올 수 있는 메소드가 필요하다.
 	//이런 역할을 하는 메소드를 정의하는 경우
@@ -51,6 +61,11 @@ public class Person {
 	}
 	public int getAge() {
 		return this.age;
+	}
+
+	@Override//source로 추가함.
+	public String toString() {
+		return "Person [name=" + name + ", addr=" + addr + ", age=" + age + "]";
 	}
 	
 }

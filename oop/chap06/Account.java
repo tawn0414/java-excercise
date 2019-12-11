@@ -1,9 +1,19 @@
-package workbook;
+package oop.chap06;
 //况农合 47率 巩力5
 public class Account {
 	private String account;
 	private int balance;
 	private double interestRate;
+	
+	public Account() {
+		
+	}
+	
+	public Account(String account, int balance, double interestRate) {
+		this.account = account;
+		this.balance = balance;
+		this.interestRate = interestRate;
+	}
 	
 	public String getAccount() {
 		return account;
@@ -33,7 +43,7 @@ public class Account {
 	}
 	
 	public double calculateInterest() {
-		return (this.balance * this.interestRate);
+		return (this.balance * this.interestRate/100);
 	}
 	
 	public void print() {

@@ -34,4 +34,15 @@ public class MyMethod {
 				result = num1+num2;
 				return result;
 			} 
+			
+		//5. 1,2,3번과 매개변수 개수와 타입순서까지 같으면 안되지만 매개변수의 순서
+		//   가 다르면 상관없이 정의할 수 있다.
+			public void display(int num, String str) {
+				for(int i = 1; i<=10; i++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
+			
+			
 }
