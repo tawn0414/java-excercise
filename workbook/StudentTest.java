@@ -2,29 +2,22 @@ package workbook;
 
 public class StudentTest {
 	public static void main(String[] args) {
-	Student2[] studentArray = new Student2[3];
-	
-	studentArray[0] = new Student2();
-	studentArray[0].setName("È«±æµ¿");
-	studentArray[0].setAge(15);
-	studentArray[0].setHeight(171);
-	studentArray[0].setWeight(81);
-	
-	studentArray[1] = new Student2();
-	studentArray[1].setName("ÇÑ»ç¶÷");
-	studentArray[0].setAge(13);
-	studentArray[0].setHeight(183);
-	studentArray[0].setWeight(72);
-	
-	studentArray[2] = new Student2();
-	studentArray[2].setName("ÀÓ°ÆÁ¤");
-	studentArray[0].setAge(16);
-	studentArray[0].setHeight(175);
-	studentArray[0].setWeight(65);
-	
-	for (int i = 0; i < studentArray.length; i++) {
-		Student2 student2 = studentArray[i];
-	}
-	
+		Student2[] stu = new Student2[3];
+		
+		stu[0] = new Student2("È«±æµ¿",15,171,81);
+		stu[1] = new Student2("ÇÑ»ç¶÷",13,183,72);
+		stu[2] = new Student2("ÀÓ°ÆÁ¤",16,175,65);
+		
+		System.out.println("ÀÌ¸§"+"\t"+"³ªÀÌ"+"\t"+"½ÅÀå"+"\t"+"¸ö¹«°Ô");
+		for(int i = 0; i<stu.length;i++) {
+			System.out.println(stu[i].getName()+"\t"+stu[i].getAge()+"\t"+stu[i].getHeight()+"\t"+stu[i].getWeight());
+		}
+		double avg = (double)(stu[0].getAge()+stu[1].getAge()+stu[2].getAge())/stu.length;
+		double height = (double)(stu[0].getHeight()+stu[1].getHeight()+stu[2].getHeight())/stu.length;
+		double weight = (double)(stu[0].getWeight()+stu[1].getWeight()+stu[2].getWeight())/stu.length;
+		System.out.println();
+		System.out.println("³ªÀÌÀÇ Æò±Õ: "+Math.round(avg*100)/100.0);
+		System.out.println("½ÅÀåÀÇ Æò±Õ: "+Math.round(height*100)/100.0);
+		System.out.println("¸ö¹«°ÔÀÇ Æò±Õ: "+Math.round(weight*100)/100.0);
 	}
 }

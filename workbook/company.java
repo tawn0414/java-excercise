@@ -1,8 +1,8 @@
 package workbook;
 //况农合 55率 巩力2锅
 public class company {
-	private double salary;
-	private double annualIncome;
+	private double salary;//扁夯鞭
+	private double annualIncome;//楷家垫
 	private double afterTaxAnnualIncome;
 	private double bonus;
 	private double afterTaxBonus;
@@ -59,8 +59,8 @@ public class company {
 	}
 	
 	public double getIncome() {
-		double result = 12*this.salary;
-		return result;
+		this.annualIncome = 12*this.salary;
+		return this.annualIncome;
 	}
 	
 	public double getAfterTaxIncome() {

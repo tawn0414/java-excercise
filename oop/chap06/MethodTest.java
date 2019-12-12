@@ -1,4 +1,7 @@
 package oop.chap06;
+
+import oop.chap07.Student;
+
 //메소드의 매개변수와 return타입으로 참조형, 배열, 기본형 모두 사용할 수 있다.
 public class MethodTest {
 	public static void main(String[] args) {
