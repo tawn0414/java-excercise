@@ -21,5 +21,4 @@ public class MobileTest {
 		System.out.println(M1.getMobileName()+"\t"+M1.operate(5)+"\t"+M1.getOsType());
 		System.out.println(M2.getMobileName()+"\t"+M2.operate(5)+"\t"+M2.getOsType());
 	}
-
 }
