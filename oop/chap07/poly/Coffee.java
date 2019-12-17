@@ -21,12 +21,15 @@ public class Coffee extends Beverage{
 		}
 	}
 
-	public int getAmount() {
+	/*static멤버를 엑세스하기 위해서 static메소드를 정의해서 엑세스한다.
+	 public int getAmount() {
 		return amount;
 	}
+	*/
 
-	public void setAmount(int amount) { 
+	/*public void setAmount(int amount) { 
 		this.amount = amount;
-	}
+	} static이라서 this가 불가능하다.
+	*/
 	
 }
